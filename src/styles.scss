@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('http://fonts.cdnfonts.com/css/geometria');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+*, *:after, *:before{
+  box-sizing: inherit;
+}
+
+html{
+  --body-fon-color:rgba(255, 161, 161, 1);
+  --wrapper-fon-color: #f5a9a9;
+  --tablo-fon-color:#28518E;
+  --calculator-fon-color: linear-gradient(#28518E, #3A77D1);
+  --button-hover-color:#4b7bc1;
+  --text-color:#FFFFFF;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Geometria', sans-serif;
+  background-color: var(--body-fon-color);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input{
+  outline: none;
+  border: none;
+  outline-offset: 0;
+}
+
+
