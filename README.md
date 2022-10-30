@@ -1,18 +1,23 @@
 # Тестовый проект "Web-Калькулятор"
 
-Демо этого проект можно посмотреть [здесь](https://calculator-c3c22.web.app)
+Демо этого проекта можно посмотреть [здесь](https://calculator-c3c22.web.app)
 
-![Image alt](https:/github.com/Gregtstu/angular-calculator-finish/raw/main/assets/main.png)
-![Image alt](https:/github.com/Gregtstu/angular-calculator-finish/raw/main/assets/main.png)
-![Image alt](https:/github.com/Gregtstu/angular-calculator-finish/raw/main/assets/main.png)
+![изображение проекта](src/assets/img/main.png)
 
-## Development server
+## Сборка и запуск проекта
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Сборка и запуск приложения осуществляется через команду `npm start`. По умолчанию используется порт`http://localhost:4200/`. При корректировке кода все изменения будут подтягиваться автоматически.
 
 
 
-## Running unit tests
+## Запуск unit-тестирования
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Команда `ng test` запускает unit-тестирование приложения через [Karma](https://karma-runner.github.io).
+
+![изображение тестирования в Karma](src/assets/img/test.png)
+
+## Запуск angular-eslint
+
+Команда `npm run lint` запускает angular-eslint.
+
 
