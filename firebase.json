@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/calculator-finish",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
