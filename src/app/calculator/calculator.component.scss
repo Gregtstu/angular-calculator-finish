@@ -1,0 +1,100 @@
+.calculator {
+  padding: 38px 31px;
+  max-width: 616px;
+  max-height: 876px;
+  margin: 0 auto;
+  background: var(--wrapper-fon-color);
+  backdrop-filter: blur(2px);
+  border-radius: 18px;
+
+  .display {
+    padding: 16px 48px 44px 46px;
+    max-width: 554px;
+    height: 800px;
+    background: var(--calculator-fon-color);
+    box-shadow: 0px 82px 158px rgba(0, 0, 0, 0.35), 0px 24.7206px 47.6324px rgba(0, 0, 0, 0.228056), 0px 10.2677px 19.7841px rgba(0, 0, 0, 0.175), 0px 3.71362px 7.1555px rgba(0, 0, 0, 0.121944);
+    border-radius: 18px;
+
+    &__tablo {
+      border-bottom: 1px solid var(--text-color);
+      padding: 101px 0 18px 0;
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+
+
+      .tablo__operations {
+        vertical-align: bottom;
+        width: 100%;
+        height: 32px;
+        margin-bottom: 28px;
+        background: transparent;
+        color: var(--text-color);
+        text-align: right;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+        cursor: default;
+      }
+
+      .tablo__result {
+        width: 100%;
+        height: 76px;
+        background: transparent;
+        color: var(--text-color);
+        text-align: right;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 80px;
+      }
+
+    }
+
+    .display__buttons {
+      padding-top: 37px;
+      display: grid;
+      grid-template-areas:
+        "c square-root percent division"
+        "seven eight nine myltiply"
+        "four five six minus"
+        "one two three plus"
+        "null-null null comma equal";
+      gap: 16px 20px;
+
+
+      .btn {
+        max-width: 80px;
+        max-height: 80px;
+        border: none;
+        outline: none;
+        border-radius: 50%;
+        font-size: 36px;
+        font-weight: 500;
+        text-align: center;
+        background: transparent;
+        line-height: 80px;
+        color: var(--text-color);
+        cursor: pointer;
+        //user-select: none;
+      }
+
+      .equal {
+        color: var(--tablo-fon-color);
+        background-color: var(--text-color);
+      }
+
+      .btn:hover {
+        background-color: var(--button-hover-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+
+      .btn:active {
+        filter: brightness(80%);
+      }
+
+    }
+
+  }
+}
+
+

@@ -1,1 +1,53 @@
-<p>calculator works!</p>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<div class="calculator">
+
+  <form class="calculator__display display"
+        (keydown.enter)="onKeydown($event)"
+        (keydown.escape)="onKeyClear($event)"
+  >
+    <div class="display__tablo tablo" >
+      <input class="tablo__operations"  #video  type="text" [(ngModel)]="inputValue"  name="inputValue" autofocus>
+      <input class="tablo__result" type="text" [(ngModel)]="outputValue" name="outputValue" readonly>
+    </div>
+    <div class="display__buttons" (keydown.9)="onKeyDownNumber($event)">
+
+      <button class="btn c" type="button" (click)="clear()">C</button>
+      <button class="btn square-root" type="button" (click) = "getOperations('√')">√</button>
+      <button class="btn percent" type="button" (click) = "getOperations('%')">%</button>
+      <button class="btn division" type="button" (click) = "getOperations('/')">/</button>
+
+      <button class="btn seven" type="button" (keyup.7)="getOperations('7')" (click) = "getOperations('7')">7</button>
+      <button class="btn eight" type="button" (click) = "getOperations('8')">8</button>
+      <button class="btn nine" type="button" (click) = "getOperations('9')">9</button>
+      <button class="btn myltiply" type="button" (click)="getOperations('*')">×</button>
+
+      <button class="btn four" type="button" (click) = "getOperations('4')">4</button>
+      <button class="btn five" type="button" (click) = "getOperations('5')">5</button>
+      <button class="btn six" type="button" (click) = "getOperations('6')">6</button>
+      <button class="btn minus" type="button" (click)="getOperations('-')">-</button>
+
+      <button class="btn one" type="button" (click) = "getOperations('1')">1</button>
+      <button class="btn two" type="button" (click) = "getOperations('2')">2</button>
+      <button class="btn three" type="button" (click) = "getOperations('3')">3</button>
+      <button class="btn plus" type="button" (click)="getOperations('+')">+</button>
+
+      <button class="btn null-null" type="button" (click)="getOperations('00')">00</button>
+      <button class="btn null" type="button" (click) = "getOperations('0')">0</button>
+      <button class="btn comma" type="button" (click) = "getOperations('.')">,</button>
+      <button class="btn equal" type="button" (click)="getOperations('=')">=</button>
+
+    </div>
+  </form>
+
+</div>
+</body>
+</html>
+
