@@ -2,7 +2,7 @@
 
 Демо этого проект можно посмотреть [здеесь](https://calculator-c3c22.web.app)
 
-![Иллюстрация к проекту](https://github.com/Gregtstu/angular-calculator-finish/raw/main/assets/img/main-img.png)
+![илюстрация проекта](/assets/img/main.png)
 
 ## Development server
 
