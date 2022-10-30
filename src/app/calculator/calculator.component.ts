@@ -1,5 +1,4 @@
-import {Component, HostListener, OnInit} from '@angular/core';
-import * as events from "events";
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-calculator',
@@ -11,9 +10,7 @@ export class CalculatorComponent implements OnInit {
   public outputValue: string = '0';
   public firstNumber: string = '';
   public secondNumber: string = '';
-  public nextNumber: string = '';
   public operation!: any;
-  public flagOperations: boolean = false;
   public digit: string[] = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', '00'];
   public action: string[] = ['-', '+', '/', '*', '√', '%'];
   public math!: any;
@@ -31,11 +28,6 @@ export class CalculatorComponent implements OnInit {
 
   giveLangCode() {
     return ['ru', 'en', 'ua'];
-  }
-
-
-  onKeyDownNumber(event: any) {
-    console.log(event.key);
   }
 
 

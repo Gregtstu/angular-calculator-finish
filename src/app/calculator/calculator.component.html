@@ -17,7 +17,7 @@
       <input class="tablo__operations"  #video  type="text" [(ngModel)]="inputValue"  name="inputValue" autofocus>
       <input class="tablo__result" type="text" [(ngModel)]="outputValue" name="outputValue" readonly>
     </div>
-    <div class="display__buttons" (keydown.9)="onKeyDownNumber($event)">
+    <div class="display__buttons">
 
       <button class="btn c" type="button" (click)="clear()">C</button>
       <button class="btn square-root" type="button" (click) = "getOperations('√')">√</button>
