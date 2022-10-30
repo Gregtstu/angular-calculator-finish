@@ -3,6 +3,8 @@
 Демо этого проект можно посмотреть [здесь](https://calculator-c3c22.web.app)
 
 ![Image alt](https:/github.com/Gregtstu/angular-calculator-finish/raw/main/assets/main.png)
+![Image alt](https:/github.com/Gregtstu/angular-calculator-finish/raw/main/assets/main.png)
+![Image alt](https:/github.com/Gregtstu/angular-calculator-finish/raw/main/assets/main.png)
 
 ## Development server
 
