@@ -1,6 +1,8 @@
-# CalculatorFinish
+# Тестовый проект "Web-Калькулятор"
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
+Демо этого проект можно посмотреть [здеесь](https://calculator-c3c22.web.app)
+
+![Иллюстрация к проекту](https://github.com/Gregtstu/angular-calculator-finish/raw/main/assets/img/main-img.png)
 
 ## Development server
 
